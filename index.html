@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Car Testing Booking Form</title>
+
+        <style>
+            #background{
+                margin: 30px;
+                border: 3px solid aqua;
+                border-radius: 50px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+          <!--Company Logo + NAME-->
+          <div class="logo-header">
+            <img src="images/titanium.jpg" alt="titanium cars logo" width="50px" height="100px">
+            <h1>TITANIUM CARS</h1>
+          </div> 
+
+            <nav> <!--NAVIGATION BAR-->
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#background">Background</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="home">
+
+            <p id="background"> Titanium Cars is passionate about connecting people with the perfect vehicle. 
+                With a wide range of high-quality cars, exceptional customer service, and a commitment to innovation, 
+                we have become a trusted name in the automotive industry. Whether you're looking for a fuel-efficient compact 
+                car or a powerful SUV, AutoDrive is here to help you drive into the future with confidence.</p>
+
+            <div class="scrolling-container">
+                <div class="scrolling-images">
+                    <img src="images/mazda.jpg" alt="mazda">
+                    <img src="images/audi.jpg" alt="audi">
+                    <img src="images/mercedes-benz.jpg" alt="mercedes-benz">
+                    <img src="images/bmw.jpg" alt="bmw">
+                    <img src="images/mazda2.jpg" alt="mazda">
+                    <img src="images/merc3.jpg" alt="merc3">
+                    <img src="images/audi2.jpg" alt="audi">
+                    <img src="images/audi3.jpg" alt="audi">
+                    <img src="images/audi4.jpg" alt="audi">
+                </div>
+            </div>
+
+            <!--BOOKING FORM-->            
+            <h3>Fill the Form</h3>
+
+            <form>
+            <label for="client_name">Name:</label> 
+            <input type="text" id="client_name" name="client_name" required><br><br>
+
+            <label for="surname">Surname:</label> 
+            <input type="text" id="surname" name="surname" required><br><br>
+
+            <label for="client_email">Email Address:</label> 
+            <input type="email" id="client_email" name="client_email" required>
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="gender" name="gender" value="female"> Female
+            <input type="radio" id="gender" name="gender" value="male"> Male 
+            <input type="radio" id="gender" name="gender" value="other"> Other
+            <br><br>
+
+            <!--SELECTION OF CAR MODELS-->
+            <label for="car_model"> Car Model:</label>
+            <select name="car_model" id="car_model">
+                <option>--Select A Car Model--</option> <!--This one is default-->
+                <option value="mercedes-benz">Mercedes-Benz</option> <!--List of the options (car models)-->
+                <option value="Mazda">Mazda</option>
+                <option value="Audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="tesla">Tesla</option>
+                <option value="porche">Porche</option>
+                <option value="Toyota">Toyota</option>
+                <option value="honda">Honda</option>
+            </select>
+            <br><br>
+
+            <!--TIME SLOTS AVAILABLE-->
+            <label for="time_slots"> Time Slots:</label>
+            <select name="time_slots" id="time_slots">
+                <option>--Select A Preferred Time--</option> <!--This one is default-->
+                <option value="9am - 10am">9am - 10am</option> <!--List of the options (countries)-->
+                <option value="11am - 12pm">11am - 12pm</option>
+                <option value="1pm - 2pm">1pm - 2pm</option>
+                <option value="3pm - 4pm">3pm - 4pm</option>
+                <option value="4pm - 5pm">4pm - 5pm</option>
+            </select>
+            <br><br>            
+
+            <label for="description">Special Notes:</label>
+            <textarea id="description" name="description"></textarea>
+            <br><br>
+
+            <!--BUTTON-->
+            <button>Register</button>
+            <input type="button" value="cancel"> <!--Or use this option-->
+        </form>
+        </main>
+
+        <!--FOOTER WITH CONTACT INFO-->
+        <footer id="contact">
+            <p>Email:<a href="mailto:info@titaniumcars.com">info@titaniumcars.com</a></p>
+            <p>Tellphone: +219830309981</p>
+
+            <p>TITANIUM CARS</p>
+            &copy; 2025 <!--COPYRIGHT-->
+        </footer>
+    </body>
+</html>

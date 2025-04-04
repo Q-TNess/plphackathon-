@@ -1,0 +1,57 @@
+
+/* */
+body {
+    background-image: url('images/background.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+/*COMPANY NAME + LOGO */
+.logo-header {
+    display: flex;
+    justify: center;
+    align-items: center;
+    gap: 0px; /* space between logo and heading */
+  }
+  
+  .logo-header img {
+    width: 80px;  
+    height: auto;
+    border-radius: 100px;
+  }
+  
+  .logo-header h1 {
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+  }
+  
+
+.scrolling-container {
+    width: 100%;
+    overflow: hidden;
+    background: transparent; 
+    height: 200px;     
+  }
+  
+  .scrolling-images {
+    display: flex;
+    animation: scroll-left 20s linear infinite;
+  }
+  
+  .scrolling-images img {
+    width: 150px; /* image width */
+    height: 200px; /*imageheight */
+    margin-right: 5px; 
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
