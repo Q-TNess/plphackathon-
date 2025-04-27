@@ -4,30 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content ="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
-        <title>Car Testing Booking Form</title>
+        <title>Test-Driving Booking Form</title>
 
-        <style>
-            #background{
-                margin: 30px;
-                border: 3px solid aqua;
-                border-radius: 50px;
-                text-align: center;
-            }
-        </style>
     </head>
 
     <body>
-        <header>
+        <header id="headerTitle">
           <!--Company Logo + NAME-->
           <div class="logo-header">
             <img src="images/titanium.jpg" alt="titanium cars logo" width="50px" height="100px">
             <h1>TITANIUM CARS</h1>
           </div> 
+          <p>Where Dreams Collide.</p>
 
             <nav> <!--NAVIGATION BAR-->
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#background">Background</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -35,7 +28,7 @@
 
         <main id="home">
 
-            <p id="background"> Titanium Cars is passionate about connecting people with the perfect vehicle. 
+            <p> Titanium Cars is passionate about connecting people with the perfect vehicle. 
                 With a wide range of high-quality cars, exceptional customer service, and a commitment to innovation, 
                 we have become a trusted name in the automotive industry. Whether you're looking for a fuel-efficient compact 
                 car or a powerful SUV, AutoDrive is here to help you drive into the future with confidence.</p>
@@ -55,24 +48,28 @@
             </div>
 
             <!--BOOKING FORM-->            
-            <h3>Fill the Form</h3>
+            <h3>Sign Up Below !</h3>
 
             <form>
+            <label for="client_email">Email Address:</label> 
+            <input type="email" id="client_email" name="client_email" required>
+            <br><br>
+
             <label for="client_name">Name:</label> 
             <input type="text" id="client_name" name="client_name" required><br><br>
 
             <label for="surname">Surname:</label> 
             <input type="text" id="surname" name="surname" required><br><br>
 
-            <label for="client_email">Email Address:</label> 
-            <input type="email" id="client_email" name="client_email" required>
-            <br><br>
-
             <label for="gender">Gender:</label>
             <input type="radio" id="gender" name="gender" value="female"> Female
             <input type="radio" id="gender" name="gender" value="male"> Male 
             <input type="radio" id="gender" name="gender" value="other"> Other
             <br><br>
+
+            <label for="user_password">Password:</label>
+            <input type="password" id="user_password" name="user_password" required> 
+             <br><br>
 
             <!--SELECTION OF CAR MODELS-->
             <label for="car_model"> Car Model:</label>
@@ -119,5 +116,7 @@
             <p>TITANIUM CARS</p>
             &copy; 2025 <!--COPYRIGHT-->
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>

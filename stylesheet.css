@@ -10,8 +10,7 @@ body {
 /*COMPANY NAME + LOGO */
 .logo-header {
     display: flex;
-    justify: center;
-    align-items: center;
+    justify-content: left;
     gap: 0px; /* space between logo and heading */
   }
   
